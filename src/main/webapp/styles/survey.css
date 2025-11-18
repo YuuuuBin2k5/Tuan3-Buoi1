@@ -1,0 +1,125 @@
+/* 1. CONTAINER & BODY */
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    /* align-content: center; Đã bị loại bỏ */ 
+    background-image: url(../images/background2.jpg);
+    background-size: cover;
+    padding: 0 20px;
+}
+
+.container {
+    width: 550px; /* Tăng nhẹ chiều rộng */
+    min-height: 600px; /* Dùng min-height để co giãn */
+    margin: 60px auto; /* Căn giữa tự động */
+    padding: 40px;
+    background-color: #acb2d4;
+    border-radius: 1rem 5rem 2rem 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Thêm bóng đổ */
+}
+
+/* 2. HEADER & LOGO */
+.logo {
+    width: 70px; 
+    height: 70px;
+    border-radius: 50%;
+    float: left; /* Đặt logo sang trái */
+    margin-right: 20px;
+}
+header {
+    overflow: auto; /* Chứa float của logo */
+    margin-bottom: 20px;
+}
+header h1 {
+    text-align: left;
+    margin-top: 15px;
+    color: #0056b3; /* Đổi màu cho Survey title */
+    font-size: 1.8em;
+}
+
+/* 3. CĂN CHỈNH INPUT VÀ LABEL */
+form {
+    margin: 0; 
+    padding-top: 10px;
+}
+
+label {
+    /* Đảm bảo label và input nằm trên một dòng */
+    display: inline-block; 
+    width: 10em; /* Đặt độ rộng cho nhãn */
+    margin-bottom: 0.5em;
+    text-align: right; /* Căn lề phải cho nhãn */
+    padding-right: 10px; 
+    font-weight: bold; 
+    color: #333;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="date"] { /* Thêm input[type="date"] */
+    width: 18em; 
+    padding: 7px;
+    margin-left: 0; 
+    margin-bottom: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 4. CĂN CHỈNH RADIO & CHECKBOXES */
+h2 {
+    color: #0056b3; 
+    margin: 20px 0 10px 0;
+    font-size: 1.2em;
+}
+
+/* Để căn chỉnh nội dung radio/checkbox vào giữa */
+.radio-group, .checkbox-group {
+    text-align: left;
+    margin: 10px 0 15px 120px; /* Đẩy sang phải để khớp với các trường input */
+}
+
+.checkbox-group label {
+    display: inline; /* Nhãn checkbox nằm ngay sau input */
+    width: auto;
+    text-align: left;
+    font-weight: normal;
+    padding: 0;
+    margin-left: 5px;
+}
+/* Sửa lỗi checkbox bị dính chữ (YES, please send me email announcements.) */
+.checkbox-group div {
+    margin-bottom: 5px; 
+}
+
+
+/* 5. NÚT SUBMIT */
+.btn-submit {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px; /* Khoảng cách với phần tử trên */
+    margin-left: 120px; /* Căn thẳng hàng với các input */
+    transition: background-color 0.3s;
+}
+
+/* Khắc phục lỗi font h1, p */
+h1, h2, p {
+    color: #0056b3; 
+    font-weight: 500; 
+    margin-bottom: 10px;
+}
+
+.errorMessage {
+    padding: 5px;
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+
