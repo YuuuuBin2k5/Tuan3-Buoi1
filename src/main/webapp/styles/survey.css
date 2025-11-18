@@ -53,6 +53,10 @@ label {
     font-weight: bold; 
     color: #333;
 }
+.text-footer{
+    font-size: 20px;
+    font-family: fantasy;
+}
 
 input[type="text"], 
 input[type="email"], 
